@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+    <title>CV generator</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+</head>
+<body>
+    <h2>{{user_profile.name}}</h2>
+    <h2>{{user_profile.email}}</h2>
+    <h2>{{user_profile.phone}}</h2>
+    <hr />
+    <h3>Summary</h3>
+    <p>{{user_profile.summary}}</p>
+
+    <h3>Skills</h3>
+    <p>{{user_profile.skills}}</p>
+
+    <h3>Education</h3>
+    <ul>
+        <li>
+            {{user_profile.school}}
+        </li>
+        <li>
+            {{user_profile.degree}} from {{user_profile.university}}
+        </li>
+    </ul>
+
+    <h3>Previous work</h3>
+    <p>{{user_profile.previous_work}}</p>
+
+</body>
+</html>
